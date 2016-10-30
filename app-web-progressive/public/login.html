@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="Hortoganic" content="Hortoganic">
+    <link rel="icon"
+      sizes="192x192"
+      href="app/img/logo/ico_128x128.png">
+     <!--Import Google Icon Font-->
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+	  <platinum-sw-register
+	    auto-register
+	    skip-waiting
+	    clients-claim
+	    reload-on-install
+	    href="sw-import.js">
+	  <platinum-sw-cache
+	      default-cache-strategy="networkFirst">
+	  </platinum-sw-cache>
+	</platinum-sw-register>
+
+	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js">
+	 var login = function(login,passwd){
+
+		  var auth = firebase.auth().signInWithEmailAndPassword(email, password);
+
+		  console.log(auth);
+	
+	 };
+	</script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCdPt7LOSnCqpOesd1YAA06PNtIWCBSvN4",
+	    authDomain: "hortaganic.firebaseapp.com",
+	    databaseURL: "https://hortaganic.firebaseio.com",
+	    storageBucket: "hortaganic.appspot.com",
+	    messagingSenderId: "417625829979"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<firebase-auth
+	    id="auth"
+	    app-name="Hortoganic"
+	    provider="google">
+	</firebase-auth>
+	
+
+   <title>Login</title>
+
+  	 <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+	
+  </head>
+  <body>
+  <p align="center">HORTAGANIC</p>
+
+  <div class = "row">
+       <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      <div class="input-field col s12">
+        <input id="senha" type="password" class="validate">
+        <label for="senha">Senha</label>
+      </div>
+    </div>
+
+    <button class="btn waves-effect waves-light" type="login" name="action" onclick="login(email,senha)">
+      Login
+      <i class="material-icons right"></i>
+    </button>
+
+  </body>

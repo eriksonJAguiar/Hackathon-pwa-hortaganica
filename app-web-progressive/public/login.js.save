@@ -1,0 +1,10 @@
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = erfirebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}, function(error) {
+  // An error happened.
+});ror.code;
+  var errorMessage = error.message;
+  // ...
+});

@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="materialize.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="estilos.css">
+
+	<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"></a><img src="logo1.png">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Quem somos</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  	</nav>
+
+  	<div style="width: 100%">
+  		<img src="banner.jpg" style="width:100%">
+  	</div>
+
+  	 <div class="row" style="margin-left:20px">
+        <div class="col s12 m6" style="width:32% ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Quero Vender</span>
+              <p></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Cadastre-se</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="width:32%">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Quero Comprar</span>
+              <p></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Cadastre-se</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="width:32%">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Quero Transportar</span>
+              <p></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Cadastre-se</a>
+            </div>
+          </div>
+        </div>
+      </div>

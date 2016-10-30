@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="estilos.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  <div class="input-field col s6">
+    <input id="nomeImp" type="text" class="validate">
+    <label for="nomeImp">Nome impresso no Cartao</label>
+  </div>
+  <div class = "row">
+    <div class="input-field col s6">
+      <input id="numeroCartao" type="number" class="validate">
+      <label for="numeroCartao">Numero do Cartao</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="numeroVal" type="number" class="validate">
+      <label for="numeroVal">Validade</label>
+    </div>
+    <div class="input-field col s6">
+     <i class="material-icons prefix">lock</i>
+     <input id="codSeg" type="number" class="validate">
+     <label for="codSeg">Codigo de Seguranca</label>
+   </div>       
+ </div>
+
+ <button class="btn waves-effect waves-light" type="proximo" name="action">
+  Proximo
+  <i class="material-icons right">send</i>
+</button>  
+
+</body>
+</html>
